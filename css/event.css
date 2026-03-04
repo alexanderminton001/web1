@@ -8,13 +8,13 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0;
-
+    background: rgb(255, 80, 80);
 }
 
 .rectangle {
     height: 75px;
     width: 250px;
-    background: red;
+    background: white;
     margin: 3px;
     border-radius: 20px;
     display: flex;

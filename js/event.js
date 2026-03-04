@@ -23,11 +23,16 @@ spinBox.addEventListener('click', () => {
 
 
 x = 0
+y = 0
 
 document.addEventListener('keydown', (event) => {
     if (event.key == 'ArrowRight') {
         x = x + 10;
-        moveBox.style.transform = `translateX(${x]px)`
+        moveBox.style.transform = `translate(${x}px, ${y}px)`
+    }
+    if (event.key === 'ArrowUp') {
+        y = y -  10;
+        moveBox.style.transform = `translate(${y}px, ${y}px)`
     }
 })
 
