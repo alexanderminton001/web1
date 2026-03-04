@@ -40,10 +40,11 @@ hoverBox.addEventListener('mouseenter', () => {
     hoverBox.style.width = "300px"
 })
 
-hoverBox.addEventListever('mouseleave', () => {
+hoverBox.addEventListener('mouseleave', () => {
     hoverBox.style.height = "60px"
     hoverBox.style.width = "250px"
 })
+
 
 
 
