@@ -17,3 +17,12 @@ clickBox.addEventListener('click', () => {
 })
 
 
+spinBox.addEventListener('click', () => {
+    spinBox.classList.toggle('start')
+})
+
+
+document.addEventListener('keydown', (event) => {
+    console.log(event.key)
+})
+
