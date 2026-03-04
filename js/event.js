@@ -47,6 +47,6 @@ hoverBox.addEventListener('mouseleave', () => {
 
 
 dblClickBox.addEventListener('mouseclick', () => {
-
+    
 })
 
