@@ -33,3 +33,15 @@ document.addEventListener('keydown', (event) => {
     moveBox.style.transform = `translate(${x}px, ${y}px)`
 })
 
+
+
+hoverBox.addEventListener('mouseenter', () => {
+
+})
+
+hoverBox.addEventListever('mouseleave', () => {
+
+})
+
+
+
