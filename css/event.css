@@ -63,19 +63,14 @@ body {
 }
 
 @keyframes movearound {
-    0% {
-        
+    from {
+        transform: rotate(0deg) translateX(120px);
     }
-    25% {
+    to {
+        transform: rotate(360deg) translateX(120px);
+    }
+}
 
-    }
-    50% {
-
-    }
-    75% {
-
-    }
-    100% {
-
-    }
+.circlemove {
+    animation: movearound 2s linear infinite;
 }

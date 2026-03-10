@@ -46,7 +46,7 @@ hoverBox.addEventListener('mouseleave', () => {
 })
 
 
-dblClickBox.addEventListener('mouseclick', () => {
-    
+dblclickBox.addEventListener('dblclick', () => {
+    dblclickBox.classList.toggle("circlemove");
 })
 
