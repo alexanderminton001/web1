@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background: rgb(120, 120, 200);
+}
+
+.rectangle {
+    height: 67px;
+    width: 267px;
+    background: rgb(99, 107, 89);
+    margin: 3px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start {
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg) translateX(200px);
+    }
+    to {
+        transform: rotate(720deg) translateX(200px);
+    }
+}
