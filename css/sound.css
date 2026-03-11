@@ -11,11 +11,13 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0;
-    background: rgb(240, 124, 122)
+    background: rgb(250, 124, 115);
+    font-family: "Roboto", sans-serif;
 }
 
 .btn {
-    background: rgb(77, 90, 150);
+    font-family: "Roboto", sans-serif;
+    background: rgb(61, 127, 210);
     color: white;
     margin: 1rem;
     padding: 1.5rem 3rem;
