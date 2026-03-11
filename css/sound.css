@@ -9,6 +9,7 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0;
+    background: rgb(150, 187, 200)
 }
 
 .btn {
@@ -19,4 +20,8 @@ body {
     font-size: 1.2rem;
     cursor: pointer;
     border-radius: 15px;
+}
+
+.btn:hover {
+    opacity: 0.9;
 }
