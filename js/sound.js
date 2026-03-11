@@ -14,7 +14,7 @@ for (let i = 0; i < 6; i = i + 1) {
 }
 
 function stopSongs(){
-    for (let i = 0; i < sounds.length, i = i + 1)
+    for (let i = 0; i < sounds.length; i = i + 1)
     {
         document.querySelector(`.${sounds[i]}`).pause()
         document.querySelector(`.${sounds[i]}`).currentTime = 0
