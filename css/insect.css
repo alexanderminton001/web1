@@ -63,5 +63,14 @@ h1 {
 }
 
 .insects-list li {
-    
+    margin: 10px;
+}
+
+.choose-insect-btn {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: inherit;
+    width: 150px;
 }
