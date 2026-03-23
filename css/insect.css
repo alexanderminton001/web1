@@ -97,7 +97,7 @@ h1 {
 }
 
 .score {
-    position; absolute;
+    position: absolute;
     top:20px;
     right: 20px;
 }
