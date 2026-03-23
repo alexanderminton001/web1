@@ -78,7 +78,7 @@ h1 {
 
 .choose-insect-btn:hover {
     background-color: #ffffff;
-    color #516dff;
+    color: #516dff;
 }
 
 .choose-insect-btn:active {
@@ -91,7 +91,7 @@ h1 {
 }
 
 .time {
-    position; absolute;
+    position: absolute;
     top: 20px;
     left: 20px;
 }
