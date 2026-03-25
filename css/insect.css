@@ -101,3 +101,9 @@ h1 {
     top: 20px;
     right: 20px;
 }
+
+.message {
+    line-height: 1.7;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
