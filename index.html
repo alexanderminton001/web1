@@ -1,17 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>web1</title>
-    </head>
-    <body>
-        <h1>This is my website!</h1>
-        <a href="search.html">This is my search page.</a>
-        <a href="loading.html">This is my loading page.</a>
-        <a href="event.html">This is my event page.</a>
-        <a href="expanding.html">This is my expanding page.</a>
-        <a href="interactive.html">This is my interactive page.</a>
-        <a href="sound.html">This is my sound page.</a>
-        <a href="nav.html">This is my nav page</a>
-        <a href="insect.html">This is my insect page</a>
-    </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Project Hub</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      background: #000;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: background 0.4s ease, color 0.4s ease;
+      overflow: hidden;
+    }
+
+    body.light-mode {
+      background: #fff;
+      color: #111;
+    }
+
+    .container {
+      position: relative;
+      width: 700px;
+      height: 700px;
+      max-width: 95vw;
+      max-height: 95vw;
+    }
+
+    .title {
+      position: absolute;
+      top: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      width: 100%;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+
+    .subtitle {
+      margin-top: 10px;
+      font-size: 1rem;
+      opacity: 0.8;
+    }
+
+    .circle-menu {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .link-item {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 140px;
+      text-align: center;
+      transform: translate(-50%, -50%);
+    }
+
+    .link-item a {
+      display: inline-block;
+      width: 100%;
+      padding: 12px 16px;
+      text-decoration: none;
+      color: inherit;
+      border: 2px solid currentColor;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.08);
+      transition: transform 0.2s ease, background 0.3s ease, color 0.3s ease;
+    }
+
+    body.light-mode .link-item a {
+      background: rgba(0, 0, 0, 0.06);
+    }
+
+    .link-item a:hover {
+      transform: scale(1.08);
+      background: #22c55e;
+      color: #fff;
+      border-color: #22c55e;
+    }
+
+    .center-toggle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      border: 3px solid currentColor;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.05);
+      text-align: center;
+      padding: 20px;
+    }
+
+    body.light-mode .center-toggle {
+      background: rgba(0, 0, 0, 0.05);
+    }
+
+    .toggle-label {
+      margin-bottom: 14px;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 64px;
+      height: 34px;
+    }
+
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      inset: 0;
+      cursor: pointer;
+      background-color: #555;
+      border-radius: 34px;
+      transition: 0.4s;
+    }
+
+    .slider:before {
+      content: "";
+      position: absolute;
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      border-radius: 50%;
+      transition: 0.4s;
+    }
+
+    input:checked + .slider {
+      background-color: #22c55e;
+    }
+
+    input:checked + .slider:before {
+      transform: translateX(30px);
+    }
+
+    .mode-text {
+      margin-top: 12px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 700px) {
+      .container {
+        width: 95vw;
+        height: 95vw;
+      }
+
+      .link-item {
+        width: 110px;
+      }
+
+      .link-item a {
+        font-size: 0.85rem;
+        padding: 10px 12px;
+      }
+
+      .center-toggle {
+        width: 135px;
+        height: 135px;
+      }
+
+      .title {
+        font-size: 1.4rem;
+        top: 10px;
+      }
+
+      .subtitle {
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">
+      My Project Hub
+      <div class="subtitle">Click a page to open it</div>
+    </div>
+
+    <div class="circle-menu">
+      <div class="link-item"><a href="search.html">Search</a></div>
+      <div class="link-item"><a href="loading.html">Loading</a></div>
+      <div class="link-item"><a href="event.html">Event</a></div>
+      <div class="link-item"><a href="expanding.html">Expanding</a></div>
+      <div class="link-item"><a href="interactive.html">Interactive</a></div>
+      <div class="link-item"><a href="sound.html">Sound</a></div>
+      <div class="link-item"><a href="nav.html">Nav</a></div>
+      <div class="link-item"><a href="insect.html">Insect</a></div>
+
+      <div class="center-toggle">
+        <div class="toggle-label">Theme Switch</div>
+        <label class="switch">
+          <input type="checkbox" id="themeToggle" />
+          <span class="slider"></span>
+        </label>
+        <div class="mode-text" id="modeText">Dark Mode</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const links = document.querySelectorAll(".link-item");
+    const radius = 230;
+    const total = links.length;
+
+    links.forEach((item, index) => {
+      const angle = (index / total) * (Math.PI * 2) - Math.PI / 2;
+      const x = Math.cos(angle) * radius;
+      const y = Math.sin(angle) * radius;
+
+      item.style.transform = `translate(${x}px, ${y}px)`;
+    });
+
+    const toggle = document.getElementById("themeToggle");
+    const modeText = document.getElementById("modeText");
+
+    toggle.addEventListener("change", function () {
+      document.body.classList.toggle("light-mode");
+
+      if (document.body.classList.contains("light-mode")) {
+        modeText.textContent = "Light Mode";
+      } else {
+        modeText.textContent = "Dark Mode";
+      }
+    });
+  </script>
+</body>
 </html>
