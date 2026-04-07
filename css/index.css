@@ -31,7 +31,7 @@ body.light-mode {
 
 .title {
   position: absolute;
-  top: 40px;
+  top: 30px;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -47,9 +47,12 @@ body.light-mode {
 }
 
 .circle-menu {
-  position: relative;
+  position: absolute;
+  top: 55%;
+  left: 50%;
   width: 100%;
   height: 100%;
+  transform: translate(-50%, -50%);
 }
 
 .link-item {
@@ -96,9 +99,9 @@ body.light-mode .link-item a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.05);
   text-align: center;
   padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
 }
 
 body.light-mode .center-toggle {
@@ -113,9 +116,12 @@ body.light-mode .center-toggle {
 
 .switch {
   position: relative;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 64px;
   height: 34px;
+  margin: 0 auto;
 }
 
 .switch input {
@@ -162,6 +168,10 @@ input:checked + .slider:before {
   .container {
     width: 95vw;
     height: 95vw;
+  }
+
+  .circle-menu {
+    top: 58%;
   }
 
   .link-item {

@@ -1,5 +1,5 @@
 const links = document.querySelectorAll(".link-item");
-const radius = 230;
+const radius = 220;
 const total = links.length;
 
 links.forEach((item, index) => {
@@ -7,7 +7,7 @@ links.forEach((item, index) => {
   const x = Math.cos(angle) * radius;
   const y = Math.sin(angle) * radius;
 
-  item.style.transform = `translate(${x}px, ${y}px)`;
+  item.style.transform = `translate(-50%, -50%) translate(${x}px, ${y}px)`;
 });
 
 const toggle = document.getElementById("themeToggle");
