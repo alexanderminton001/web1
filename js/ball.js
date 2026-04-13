@@ -43,7 +43,8 @@ function createBall(){
     ball.style.left = `${ballXPosition}px`
 }
 
-create LPadel() {
+createLPadel()
+function createLPadel() {
     LPadel.style.height = `${LPadelHeight}px`
     LPadel.style.width = `${LPadelWidth}px`
     LPadel.style.backgroundColor = 'blue'
@@ -51,3 +52,5 @@ create LPadel() {
     LPadel.style.left = "50px"
     LPadel.style.top = `${windowHeight / 2 - LPadelHeight / 2}px`
 }
+
+LPadel.addEventListener('')
