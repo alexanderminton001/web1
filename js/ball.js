@@ -1,15 +1,16 @@
+const windowHeight = window.innerHeight
+const windowWidth = window.innerWidth
+
 const ball = document.createElement('div')
 document.body.appendChild(ball)
 const LPadel = document.createElement('div')
 document.body.appendChild(LPadel)
 let LPadelWidth = 20
 let LPadelHeight = 200
-let LPadelSpeed = 5
+let LPadelSpeed = 40
 let LPadelYPosition = windowHeight / 2 - LPadelHeight / 2
 
 const ballRadius = 30
-const windowHeight = window.innerHeight
-const windowWidth = window.innerWidth
 let ballXPosition = windowWidth/2 - ballRadius
 let ballYPosition = windowHeight/2 - ballRadius
 let ballSpeed = 5
@@ -57,7 +58,12 @@ function createLPadel() {
 
 document.addEventListener('keyup', (event) => {
     if (event.key == 'w') {
-        LPadelYPosition = LPadelYPosition - LPadelSpeed
+        if (LPadelYPosition < 0) {
+            LPadelYPosition = 0
+        }
+        else {
+            LPadelYPosition = LPadelYPosition - LPadelSpeed
+        }
     }
     if (event.key == 's') {
         LPadelYPosition = LPadelYPosition + LPadelSpeed
