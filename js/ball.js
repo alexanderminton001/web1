@@ -30,14 +30,25 @@ function moveBall(){
     if (ballXPosition < 0 || ballXPosition > windowWidth - 2 * ballRadius){
         ballXDirection = ballXDirection * -1
     }
+    let ballTop = ballYPosition
+    let ballBottom = BallYPosition + 2 * ballRadius
+    let ballLeft = ballXPosition
+    let LPadelTop = LPadelYPosition
+    let LPadelBottom = LPadelYPosition + LPadelHeight
+    let LPadelRight = LPadelXPosition + LPadelWidth
+
+    if(
+        (ballBottom >= LPadelTop) &&
+        (ballTop <= LPadelBottom) &&
+        (ballLeft <= LPadelRight) &&
+        (ballXDirection == -1)
+
+    ) {
+            ballXDirection = ballXDirection * -1
+        }
 }
 
-let ballTop = ballYPosition
-let ballBottom = BallYPosition + 2 * ballRadius
-let ballLeft = ballXPosition
-let LPadelTop = LPadelYPosition
-let LPadelBottom = LPadelYPosition + LPadelHeight
-let LPadelRight = LPadelXPosition + LPadelWidth
+
 
 
 
