@@ -93,3 +93,10 @@ document.addEventListener('keydown', (event) => {
     }
     LPadel.style.top = `${LPadelYPosition}px`
 })
+
+function animate() {
+    moveBall()
+    moveLPadel()
+    requestAnimationFrame(animate)
+}
+animate()
