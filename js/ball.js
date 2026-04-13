@@ -32,6 +32,13 @@ function moveBall(){
     }
 }
 
+let ballTop = ballYPosition
+let ballBottom = BallYPosition + 2 * ballRadius
+let ballLeft = ballXPosition
+let LPadelTop = LPadelYPosition
+let LPadelBottom = LPadelYPosition + LPadelHeight
+let LPadelRight = LPadelXPosition + LPadelWidth
+
 
 
 createBall()
