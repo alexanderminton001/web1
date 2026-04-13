@@ -5,6 +5,7 @@ document.body.appendChild(LPadel)
 let LPadelWidth = 20
 let LPadelHeight = 200
 let LPadelSpeed = 5
+let LPadelYPosition = 
 
 const ballRadius = 30
 const windowHeight = window.innerHeight
@@ -59,6 +60,7 @@ document.addEventListener('keyup', (event) => {
         LPadelYPosition = LPadelYPosition - LPadelSpeed
     }
     if (event.key == 's') {
-        //move down
+        LPadelYPosition = LPadelYPosition + LPadelSpeed
     }
+    LPadel.style.top = `${LPadelYPosition}px`
 })
