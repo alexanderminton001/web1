@@ -100,3 +100,14 @@ function animate() {
     requestAnimationFrame(animate)
 }
 animate()
+
+wKey = false
+sKey = false
+document.addEventListener('keydown', (event) => {
+    if (event.key == 'w') {
+        wKey = true
+    }
+    if (event.key == 's') {
+        sKey = true
+    }
+})
