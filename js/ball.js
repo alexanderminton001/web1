@@ -48,10 +48,6 @@ function moveBall(){
         }
 }
 
-
-
-
-
 createBall()
 function createBall(){
     document.body.appendChild(ball)
