@@ -120,3 +120,13 @@ document.addEventListener('keyup', (event) => {
         sKey = false
     }
 })
+
+function moveLPadel() {
+    if (wKey == true && LPadelYPosition > 0) {
+        LPadelYPosition = LPadelYPosition - LPadelSpeed
+    }
+    if (sKey == true && LPadelYPosition < windoHeight - LPadelHeight) {
+        LPadelYPosition = LPadelYPosition + LPadelSpeed
+    }
+    LPadel.style.top = `${LPadelYPosition}px`
+}
