@@ -111,3 +111,12 @@ document.addEventListener('keydown', (event) => {
         sKey = true
     }
 })
+
+document.addEventListener('keyup', (event) => {
+    if (event.key == 'w') {
+        wKey = false
+    }
+    if (event.key == 's') {
+        sKey = false
+    }
+})
