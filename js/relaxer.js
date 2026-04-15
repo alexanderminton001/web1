@@ -3,6 +3,7 @@ const text = document.getElementById('text')
 
 setInterval(breathAnimation, 7500)
 
+breathAnimation()
 function breathAnimation() {
     text.innerHTML = 'Breathe In'
     container.classList.remove('shrink')
